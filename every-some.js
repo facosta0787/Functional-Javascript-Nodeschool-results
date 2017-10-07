@@ -1,12 +1,8 @@
 'use strict';
 
-function checkUsersValid(goodUsers) {
-  return function allUsersValid(submittedUsers) {
-    return submittedUsers.every(function(submittedUser) {
-      return goodUsers.some(function(goodUser) {
-        return goodUser.id === submittedUser.id
-      })
-    })
+function checkUsersValid(goodUsers){
+  return function allUsersValid(submittedUsers){
+    return submittedUsers.every( (su) => goodUsers.some( (gu) => gu.id === su.id ) )
   }
 }
 
