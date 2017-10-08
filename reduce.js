@@ -1,7 +1,5 @@
 'use strict';
 
- var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
-
 function countWords(inputWords) {
   // SOLUTION GOES HERE
   var results = {}
@@ -14,7 +12,4 @@ function countWords(inputWords) {
   },{})
   return results
 }
-
-console.log(countWords(inputWords))
-
-// module.exports = countWords
+module.exports = countWords
